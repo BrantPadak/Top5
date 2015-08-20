@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+      <div class="col-md-8">
+        <div class="well">
+          <h3><%= @song.name %></h3>
+          <h4>by <%= @song.artist_id %></h4>
+          <p>
+            <% "#{song.rating}".to_i.times do %>
+              <span class="glyphicon glyphicon-star"></span>
+            <% end %>
+          </p>
+          <hr/>
+          <h4><%= link_to edit_song_path(song) do %>
+            <span class="glyphicon glyphicon-pencil"></span>
+          <% end %>  
+          <%= link_to song, method: :delete, data: { confirm: 'Are you sure?' } do %>
+             <span class="glyphicon glyphicon-trash"></span>
+          <% end %>
+          </h4>   
+        </div>
+      </div>
+  </div>
