@@ -11,9 +11,9 @@
             <% end %>
           </p>
           <hr/>
-          <h4><%= link_to edit_song_path(song) do %>
+          <h4><%= link_to edit_song_path %>
             <span class="glyphicon glyphicon-pencil"></span>
-          <% end %>  
+            
           <%= link_to song, method: :delete, data: { confirm: 'Are you sure?' } do %>
              <span class="glyphicon glyphicon-trash"></span>
           <% end %>

@@ -1,30 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @artist.name %>
-</p>
-
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
 <div class="row">
-      <div class="col-md-6">
-        <div class="well">
-          <h3><%= link_to song.name, song %></h3>
-          <h4>by <%= song.artist.name %></h4>
-          <p>
-            <% "#{song.rating}".to_i.times do %>
-              <span class="glyphicon glyphicon-star"></span>
-            <% end %>
-          </p>
-          <hr/>
-          <h4><%= link_to edit_song_path(song) do %>
-            <span class="glyphicon glyphicon-pencil"></span>
-          <% end %>  
-          <%= link_to song, method: :delete, data: { confirm: 'Are you sure?' } do %>
-             <span class="glyphicon glyphicon-trash"></span>
-          <% end %>
-          </h4>   
-        </div>
-      </div>
+  <div class="col-md-12">
+    <div class="well">
+		<h1><%= @artist.name %></h1>
+
+		<p><%= image_tag @artist.avatar.url(:medium) %></p>
+
+		<% @artist.songs.each do |song| %>
+			<h3><%= link_to song.name, song %></a></h3>
+		<% end %>
+    </div>
   </div>
+</div>

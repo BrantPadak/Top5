@@ -6,6 +6,7 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'font-awesome-rails'
 gem 'paperclip'
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
