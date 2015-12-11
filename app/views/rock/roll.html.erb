@@ -1,7 +1,11 @@
 <div class="row">
-  <h2> My Top 5 </h2>
+  <h2>The Top 5</h2>
   <% @songs.each do |song| %>
     <div class="well well-lg">
+
+      
+      <%= image_tag song.artist.avatar.url(:thumb) %>
+      
       
       <h2><%= song.name %></h2>
 

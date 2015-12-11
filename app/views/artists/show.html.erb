@@ -5,7 +5,9 @@
     <div class="well">
 		<h1><%= @artist.name %></h1>
 
-		<p><%= image_tag @artist.avatar.url(:medium) %></p>
+		<% if @artist.avatar.exists? != nil %>
+			<p><%= image_tag @artist.avatar.url(:medium) %></p>
+		<% end %>	
 
 		<% @artist.songs.each do |song| %>
 			<h3><%= link_to song.name, song %></a></h3>
