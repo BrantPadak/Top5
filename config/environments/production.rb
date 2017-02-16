@@ -76,4 +76,14 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Add AWS connection
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['top5padak-images'],
+      :access_key_id => ENV['AKIAJ7O4M46KLAZ3B6CQ'],
+      :secret_access_key => ENV['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']
+    }
+  }
 end
