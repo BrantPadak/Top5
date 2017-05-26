@@ -8,7 +8,7 @@ gem 'momentjs-rails', '>= 2.9.0'
 gem 'font-awesome-rails'
 gem 'paperclip'
 gem 'figaro'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk', '~> 2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
