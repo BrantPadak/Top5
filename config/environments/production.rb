@@ -80,8 +80,9 @@ Rails.application.configure do
   # Add AWS connection
   config.paperclip_defaults = {
     :storage => :s3,
+    :s3_protocol => 'http'
+    :bucket => ENV['top5padak-images'],
     :s3_credentials => {
-      :bucket => ENV['top5padak-images'],
       :access_key_id => ENV['AKIAJ7O4M46KLAZ3B6CQ'],
       :secret_access_key => ENV['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']
     }
