@@ -6,12 +6,12 @@ ruby "2.2.3"
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'font-awesome-rails'
-gem 'paperclip', '~> 5.0.0'
+gem 'paperclip', '~> 5.1.0'
 gem 'figaro'
 gem 'aws-sdk', '~> 2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.10'
 
 
 group :development do
