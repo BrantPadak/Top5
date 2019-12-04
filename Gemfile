@@ -6,7 +6,7 @@ ruby "2.5.7"
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'font-awesome-rails'
-gem 'paperclip', '~> 5.1.0'
+gem 'paperclip', '~> 5.2.0'
 gem 'figaro'
 gem 'aws-sdk', '~> 2.3'
 
